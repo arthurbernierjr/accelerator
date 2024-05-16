@@ -5,6 +5,7 @@ excerpt: 'I want to be the best. I want to be the best simple and plain, thats w
 featureImage: '/img/10.png'
 date: '12/25/22'
 order: 4
+mod: mod3
 ---
 
 # MERN Architecture

@@ -5,6 +5,7 @@ excerpt: 'I want to be the best. I want to be the best simple and plain, thats w
 featureImage: '/img/3.png'
 date: '12/25/22'
 order: 2
+mod: mod6
 ---
 
 

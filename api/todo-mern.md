@@ -5,6 +5,7 @@ excerpt: 'I want to be the best. I want to be the best simple and plain, thats w
 featureImage: '/img/todolist.png'
 date: '12/25/22'
 order: 1
+mod: mod6
 ---
 
 # Separation of Concerns

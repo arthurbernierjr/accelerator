@@ -41,7 +41,8 @@ gulp.task('default', (cb) => {
 	 serveStatic: ['./public']
 	});
 	// SET UP WATCJERS TO LISTEN TO CHANGES IN FILES
-	gulp.watch(['./src/*','./src/**/*.js','./src/components/**/**/*'], gulp.task('js-watch')).on('change', reload);;
+	gulp.watch(['./src/*','./src/**/*.js','./src/components/**/**/*'], gulp.task('js-watch')).on('change', reload);
+	gulp.watch(['./json/**/*', './json_static/**/*', './json_pillar/**/*'], gulp.task('create')).on('change', reload)
 	// LISTEN FOR WHEN TO RELOAD PAGES
 	gulp
 		.watch([
@@ -71,6 +72,14 @@ gulp.task('build', cb => {
 		cb(err);
 	});
 });
+
+gulp.task('create', (cb) => {
+	exec('npm run create', function(err, stdout, stderr) {
+		console.log(stdout);
+		console.log(stderr);
+		cb(err);
+	});
+})
 
 gulp.task('js-watch', gulp.task('webpack'), function (done) {
     reload();

@@ -5,6 +5,7 @@ excerpt: 'I want to be the best. I want to be the best simple and plain, thats w
 featureImage: '/img/functions.png'
 date: '10/28/21'
 order: 0
+mod: mod2
 ---
 
 ![function](/img/mamba.gif)

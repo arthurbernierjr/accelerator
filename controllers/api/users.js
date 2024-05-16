@@ -30,15 +30,20 @@ const dataController = {
   },
   async login (req, res, next) {
     try {
-      const user = await User.findOne({ email: req.body.email })
-      if (!user) throw new Error()
+      // puprosefully make username use req.body.email
+      // then the frontend can use the same field to send username or email
+      let user = await User.findOne({ email: req.body.email })
+      if (!user) {
+        user = await User.findOne({ username: req.body.email })
+      }
+      if(!user) throw new Error("can't find user with email or username")
       const match = await bcrypt.compare(req.body.password, await hash(user.password, process.env.SECRET))
-      if (!match) throw new Error()
+      if (!match) throw new Error("password is invalid")
       res.locals.data.user = user
       res.locals.data.token = createJWT(user)
       next()
-    } catch {
-      res.status(400).json('Bad Credentials')
+    } catch(err) {
+      res.status(400).json({ msg: err.message })
     }
   }
 }

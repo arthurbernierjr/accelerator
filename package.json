@@ -8,7 +8,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build && gulp styles",
+    "build": "gulp create && gulp build && gulp styles",
+    "create": "node create.js",
     "dev:webpack": "webpack --mode development --define-process-env-node-env dev",
     "build:webpack": "webpack --mode production --define-process-env-node-env production",
     "dev": "gulp",
