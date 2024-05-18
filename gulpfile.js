@@ -8,6 +8,9 @@ const gulp = require('gulp');
 // Use Nodemon programatically
 const nodemon = require('gulp-nodemon-pro');
 
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
+
 // Explanation for Students ---- This is the mastermind that will open up our code in a browser window
 const browserSync = require('browser-sync').create();
 
@@ -40,8 +43,9 @@ gulp.task('default', (cb) => {
 	 },
 	 serveStatic: ['./public']
 	});
-	// SET UP WATCJERS TO LISTEN TO CHANGES IN FILES
-	gulp.watch(['./src/*','./src/**/*.js','./src/components/**/**/*'], gulp.task('js-watch')).on('change', reload);
+	// SET UP WATCHERS TO LISTEN TO CHANGES IN FILES
+	gulp.watch('./src/scss/**/*',  gulp.task('styles'))
+	gulp.watch(['./src/*.js', './src/index.html','./src/**/*.js','./src/components/**/**/*', './src/pages/**/**/*'], gulp.task('js-watch')).on('change', reload);
 	gulp.watch(['./json/**/*', './json_static/**/*', './json_pillar/**/*'], gulp.task('create')).on('change', reload)
 	// LISTEN FOR WHEN TO RELOAD PAGES
 	gulp
@@ -53,7 +57,23 @@ gulp.task('default', (cb) => {
 		cb()
 });
 
-
+gulp.task('styles', (cb) => {
+	gulp
+		.src('src/scss/**/*.scss')
+		.pipe(
+			sass({
+				outputStyle: 'compressed'
+			}).on('error', sass.logError)
+		)
+		.pipe(
+			autoprefixer({
+				cascade: false
+			})
+		)
+		.pipe(gulp.dest('./public/css'))
+		.pipe(browserSync.stream());
+		cb()
+});
 
 // Explanation for Students ---- This is for the development build
 gulp.task('webpack', cb => {

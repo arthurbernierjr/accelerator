@@ -880,7 +880,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.PS35NXnaZStdI6YeYwjp {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 55rem;
 }
 @media (max-width: 768px) {
   .PS35NXnaZStdI6YeYwjp {
@@ -890,7 +889,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.PS35NXnaZStdI6YeYwjp {
 
 .PS35NXnaZStdI6YeYwjp h1 {
   text-align: left;
-}`, "",{"version":3,"sources":["webpack://./src/pages/Home/course-content-display.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,eAAA;EACA,6BAAA;EACA,gBAAA;AACJ;AAAE;EALF;IAMI,gBAAA;EAGF;AACF;;AADA;EACI,gBAAA;AAIJ","sourcesContent":[".main {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    max-width: 55rem;\n  @media (max-width: 768px){\n    max-width: 150vw;\n  }\n}\n.main h1 {\n    text-align: left;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/Home/course-content-display.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,eAAA;EACA,6BAAA;AACJ;AAAE;EAJF;IAKI,gBAAA;EAGF;AACF;;AADA;EACI,gBAAA;AAIJ","sourcesContent":[".main {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n  @media (max-width: 768px){\n    max-width: 150vw;\n  }\n}\n.main h1 {\n    text-align: left;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"main": `PS35NXnaZStdI6YeYwjp`
@@ -922,7 +921,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ulqQYpt8fCBU6oxznV3_ {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 55rem;
 }
 @media (max-width: 768px) {
   .ulqQYpt8fCBU6oxznV3_ {
@@ -932,7 +930,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ulqQYpt8fCBU6oxznV3_ {
 
 .ulqQYpt8fCBU6oxznV3_ h1 {
   text-align: left;
-}`, "",{"version":3,"sources":["webpack://./src/pages/Mod/course-content-display.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,eAAA;EACA,6BAAA;EACA,gBAAA;AACJ;AAAE;EALF;IAMI,gBAAA;EAGF;AACF;;AADA;EACI,gBAAA;AAIJ","sourcesContent":[".main {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n    max-width: 55rem;\n  @media (max-width: 768px){\n    max-width: 150vw;\n  }\n}\n.main h1 {\n    text-align: left;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/Mod/course-content-display.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,eAAA;EACA,6BAAA;AACJ;AAAE;EAJF;IAKI,gBAAA;EAGF;AACF;;AADA;EACI,gBAAA;AAIJ","sourcesContent":[".main {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n  @media (max-width: 768px){\n    max-width: 150vw;\n  }\n}\n.main h1 {\n    text-align: left;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"main": `ulqQYpt8fCBU6oxznV3_`
@@ -1502,4 +1500,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.658318c534bbda8ab84ec61e3494b280.js.map
+//# sourceMappingURL=App.3d8c7f487370c899b220864b40f7c8e4.js.map
