@@ -1,11 +1,17 @@
 .main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
   @media (max-width: 768px){
     max-width: 150vw;
   }
+  div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
-.main h1 {
-    text-align: left;
-}
+

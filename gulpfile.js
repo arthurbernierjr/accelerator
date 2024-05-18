@@ -45,8 +45,8 @@ gulp.task('default', (cb) => {
 	});
 	// SET UP WATCHERS TO LISTEN TO CHANGES IN FILES
 	gulp.watch('./src/scss/**/*',  gulp.task('styles'))
-	gulp.watch(['./src/*.js', './src/index.html','./src/**/*.js','./src/components/**/**/*', './src/pages/**/**/*'], gulp.task('js-watch')).on('change', reload);
-	gulp.watch(['./json/**/*', './json_static/**/*', './json_pillar/**/*'], gulp.task('create')).on('change', reload)
+	gulp.watch(['./src/*.js', './src/index.html','./src/**/*.js','./src/components/**/**/*', './src/router/**/**/*', './src/pages/**/**/*'], gulp.task('js-watch')).on('change', reload);
+	gulp.watch(['./api/**/*'], gulp.task('create')).on('change', reload)
 	// LISTEN FOR WHEN TO RELOAD PAGES
 	gulp
 		.watch([

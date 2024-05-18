@@ -12,6 +12,9 @@ export default function Lesson (props) {
             setPost(data)
         }
         getPost()
+        window.setTimeout(()=>{
+            window.highlightSyntax()
+        }, 500)
     }, [])
 
     return (
@@ -23,6 +26,7 @@ export default function Lesson (props) {
                     <h2 className='card-title'>
                         {post.data.title}
                     </h2>
+                </a>
                     <div className='card-body'>
                         <h5 className='card-title'>
                             {post.data.subTitle}
@@ -30,13 +34,13 @@ export default function Lesson (props) {
                         <div className='card-img-container'>
                             <img 
                                 className='card-img' 
-                                src={post.data.featuredImage}
+                                src={post.data.featureImage}
                                 alt={post.data.title}
                              />
                         </div>
                         <div className='container mx-auto' dangerouslySetInnerHTML={{__html: post.content}}></div>
                     </div>
-                </a>
+                
             </div>:
             <>...loading</>
             }

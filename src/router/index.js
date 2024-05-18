@@ -4,14 +4,16 @@ import { useState } from 'react'
 import styles from './AppRouter.module.scss';
 import { getUser } from '../utilities/users-service';
 import AuthPage from '../pages/AuthPage/AuthPage';
+import PrismHighlighter from '../components/PrismHighLighter/Prism';
 
 const AppRouter = () => {
 	const [user, setUser] = useState(getUser())
 	return (
 		<Router>
+			<PrismHighlighter />
 			<main className={styles.App}>
 			{
-				user ?
+				user ? 
 			<>
 			<Routes>
 				{routes.map(({ Component, key, path }) => (

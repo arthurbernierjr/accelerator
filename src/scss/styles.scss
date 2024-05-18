@@ -16,6 +16,16 @@
     }
 }
 
+:root {
+  --white: ghostwhite;
+  --tan-1: #FBF9F6;
+  --tan-2: #E7E2DD;
+  --tan-3: #E2D9D1;
+  --tan-4: #D3C1AE;
+  --orange: rgb(236, 6, 21);
+  --text-light: #968c84;
+  --text-dark: black;
+}
 
 
 $custom-colors: (
@@ -40,6 +50,17 @@ $veryLightRed: hsl(13, 100%, 72%);
 $lightRed: hsl(353, 100%, 62%);
 $veryDarkGrayBlue: hsl(237, 17%, 21%);
 $veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+
+
+pre[class*="language-"], pre {
+    border-radius: .5em;
+    border: .3em solid hsl(0, 0%, 33%);
+    box-shadow: 1px 1px .5em black inset;
+    margin: .5em 0;
+    overflow: auto;
+    padding: 1em;
+}
+
 
 a, a:link, a:visited {
   text-decoration: none;
@@ -452,9 +473,9 @@ $ 'nav', { className: 'navbar card'}, =>
       font-size: 1.2rem;
       max-width: 90vw;
     }
-    &-header {
+    // &-header {
 
-    }
+    // }
     &-title {
       text-align: center;
       font-family: 'Grand Hotel', cursive;

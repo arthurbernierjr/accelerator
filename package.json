@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp create && gulp build && gulp styles",
+    "build": "gulp build && gulp styles",
     "create": "node create.js",
     "dev:webpack": "webpack --mode development --define-process-env-node-env dev",
     "build:webpack": "webpack --mode production --define-process-env-node-env production",
@@ -60,7 +60,8 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.0",
     "morgan": "^1.10.0",
+    "prismjs": "^1.29.0",
     "serve-favicon": "^2.5.0",
-    "showdown": "^2.1.0"
+    "showdown": "^1.9.1"
   }
 }
